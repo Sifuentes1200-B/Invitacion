@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirmación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body class="page confirmation-page floral-bg">
+  <main class="confirmation-wrapper paper-bg">
+    <h1>Confirma tu asistencia</h1>
+    <p>Escribe tu código de invitación para consultar tus datos.</p>
+
+    <form id="codeForm" class="code-form">
+      <input type="text" id="inviteCode" placeholder="Ej. BODA-002" autocomplete="off" required />
+      <button type="submit" class="primary-btn">Consultar invitación</button>
+    </form>
+
+    <p id="formMessage" class="form-message"></p>
+
+    <section id="guestInfo" class="guest-panel hidden"></section>
+  </main>
+
+  <script src="./js/confirmacion.js"></script>
+</body>
+</html>

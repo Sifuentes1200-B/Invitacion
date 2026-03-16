@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gracias por confirmar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body class="page thanks-page floral-bg">
+  <main class="thanks-wrapper paper-bg">
+    <p class="section-kicker">Confirmación recibida</p>
+    <h1 class="thanks-title">Gracias por tu respuesta</h1>
+
+    <p id="thanksLead" class="thanks-text"></p>
+
+    <div id="thanksMessageBox" class="thanks-message-box hidden">
+      <p class="thanks-message-intro">Con cariño, queremos dedicarte estas palabras:</p>
+      <p id="dbMessage" class="db-message"></p>
+    </div>
+
+    <section class="thanks-countdown-box">
+      <h2>Cuenta regresiva</h2>
+      <div id="thanksCountdown" class="countdown"></div>
+    </section>
+
+    <div class="thanks-actions">
+      <a href="./index.html" class="primary-btn">Volver al inicio</a>
+    </div>
+  </main>
+
+  <script src="./js/gracias.js"></script>
+</body>
+</html>

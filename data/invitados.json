@@ -1,0 +1,27 @@
+[
+  {
+    "codigo": "BODA-001",
+    "titular": "Carlos Ramírez",
+    "pases": 1,
+    "acompanantes": ["Rafael Marquez"],
+    "mesa": "Mesa 4",
+    "mensaje": "Nos dará mucho gusto contar contigo en este día tan especial.",
+    "confirmacion": {
+      "asistencia": "si",
+      "nombresConfirmados": [],
+      "fecha": "2026-03-16T19:09:59.591Z"
+    }
+  },
+  {
+    "codigo": "BODA-002",
+    "titular": "Andrea López",
+    "pases": 2,
+    "acompanantes": [
+      "",
+      ""
+    ],
+    "mesa": "Mesa 7",
+    "mensaje": "Tu presencia hará este día aún más especial.",
+    "confirmacion": null
+  }
+]

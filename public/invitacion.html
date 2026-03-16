@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuestra invitación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Great+Vibes&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body class="page invitation-page">
+  <header class="hero floral-bg section-block">
+    <h1 class="hero-title">¡Nos casamos!</h1>
+    <img src="./assets/Portada.JPG" alt="Foto de los novios" class="hero-image" />
+  </header>
+
+  <section class="section-block intro floral-bg paper-bg">
+    <p class="music-label">Presiona play para reproducir nuestra canción</p>
+
+    <div class="audio-box">
+      <audio id="weddingSong" src="./assets/song.mp3"></audio>
+      <button id="playButton" class="play-button" type="button">▶</button>
+    </div>
+
+    <p class="intro-text">
+      Porque el amor es más bonito cuando se comparte, queremos que estés con nosotros este día especial.
+    </p>
+
+    <div class="gallery-row">
+      <img src="./assets/DSC_3803.JPG" alt="Fotografía de los novios 1" />
+      <img src="./assets/DSC_3951.JPG" alt="Fotografía de los novios 2" />
+      <img src="./assets/DSC_3966.JPG" alt="Fotografía de los novios 3" />
+    </div>
+  </section>
+
+  <section class="section-block details-section paper-bg">
+    <p class="section-kicker">Los invitamos a ser parte de este gran día</p>
+
+    <div class="date-layout">
+      <span>Sábado</span>
+      <strong>16</strong>
+      <span>2026</span>
+    </div>
+    <h2 class="month-title">Mayo</h2>
+
+    <div class="countdown-wrap">
+      <h3>Faltan</h3>
+      <div id="countdown" class="countdown"></div>
+    </div>
+
+    <div class="event-card">
+      <div class="event-card-icon">
+        <img src="./assets/church.png" alt="Ícono de iglesia" />
+      </div>
+      <h3>Ceremonia religiosa</h3>
+      <p>Iglesia San Juan Bautista</p>
+      <a
+        href="https://maps.app.goo.gl/gUBrdzvPAPJYyXbS7"
+        class="outline-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Ver ubicación
+      </a>
+    </div>
+
+    <div class="event-card">
+      <div class="event-card-icon">
+        <img src="./assets/hall.png" alt="Ícono de salón" />
+      </div>
+      <h3>Recepción</h3>
+      <p>Hacienda San Benito</p>
+      <a
+        href="https://maps.app.goo.gl/mVQmMNjJ5wWLwxzU7"
+        class="outline-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Ver ubicación
+      </a>
+    </div>
+
+    <div class="dress-code-box">
+      <div class="event-card-icon">
+        <img src="./assets/clothes.png" alt="Ícono de vestimenta" />
+      </div>
+      <p class="dress-code-label">Dress code</p>
+      <h3>Elegante</h3>
+      <p>Por favor evitar prendas en color blanco y tonos similares.</p>
+    </div>
+  </section>
+
+  <section class="section-block schedule-section paper-bg">
+    <h2>Itinerario de actividades</h2>
+
+    <div class="timeline">
+      <article>
+        <div class="timeline-left">
+          <img src="./assets/church.png" alt="Ícono de ceremonia" class="timeline-icon" />
+          <strong>Ceremonia</strong>
+        </div>
+        <span>3:00 PM</span>
+      </article>
+
+      <article>
+        <div class="timeline-left">
+          <img src="./assets/party.png" alt="Ícono de recepción" class="timeline-icon" />
+          <strong>Recepción</strong>
+        </div>
+        <span>9:00 PM</span>
+      </article>
+
+      <article>
+        <div class="timeline-left">
+          <img src="./assets/champagne-glass.png" alt="Ícono de brindis" class="timeline-icon" />
+          <strong>Entrada de los novios y brindis</strong>
+        </div>
+        <span>9:30 PM</span>
+      </article>
+
+      <article>
+        <div class="timeline-left">
+          <img src="./assets/dancing.png" alt="Ícono de vals" class="timeline-icon" />
+          <strong>Vals</strong>
+        </div>
+        <span>10:00 PM</span>
+      </article>
+
+      <article>
+        <div class="timeline-left">
+          <img src="./assets/sweet-corn.png" alt="Ícono de elotes" class="timeline-icon" />
+          <strong>Elotes</strong>
+        </div>
+        <span>11:00 PM</span>
+      </article>
+
+      <article>
+        <div class="timeline-left">
+          <img src="./assets/birthday-cake.png" alt="Ícono de pastel" class="timeline-icon" />
+          <strong>Pastel</strong>
+        </div>
+        <span>12:00 AM</span>
+      </article>
+
+      <article>
+        <div class="timeline-left">
+          <img src="./assets/wedding-car.png" alt="Ícono de cierre de evento" class="timeline-icon" />
+          <strong>Final</strong>
+        </div>
+        <span>2:00 AM</span>
+      </article>
+    </div>
+  </section>
+
+  <section class="section-block confirmation-cta floral-bg">
+    <h2>Confirmación de asistencia</h2>
+    <p>Ingresa con tu número de invitación para consultar tus datos y confirmar tu asistencia.</p>
+    <a href="./confirmacion.html" class="primary-btn">Confirmar asistencia</a>
+  </section>
+
+  <script src="./js/invitacion.js"></script>
+</body>
+</html>

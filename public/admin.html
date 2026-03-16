@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel de administración</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Great+Vibes&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body class="page admin-page floral-bg">
+  <main class="admin-wrapper paper-bg">
+    <p class="section-kicker">Panel privado</p>
+    <h1 class="admin-title">Administración de invitados</h1>
+
+    <section class="admin-card">
+      <h2>Dar de alta nuevo invitado</h2>
+
+      <form id="adminGuestForm" class="admin-form">
+        <label>
+          Código
+          <input type="text" id="codigo" placeholder="Ej. BODA-025" required />
+        </label>
+
+        <label>
+          Titular
+          <input type="text" id="titular" placeholder="Nombre completo" required />
+        </label>
+
+        <label>
+          Número de pases
+          <input type="number" id="numero_pases" min="1" value="1" required />
+        </label>
+
+        <label>
+          Mensaje
+          <textarea id="mensaje" rows="4" placeholder="Mensaje personalizado para la página de gracias"></textarea>
+        </label>
+
+        <button type="submit" class="primary-btn">Registrar invitado</button>
+      </form>
+
+      <p id="adminFormMessage" class="form-message"></p>
+    </section>
+
+    <section class="admin-card">
+      <div class="admin-topbar">
+        <h2>Dashboard de invitados</h2>
+        <button id="refreshGuests" class="outline-btn" type="button">Actualizar</button>
+      </div>
+
+      <div class="admin-stats">
+        <div class="admin-stat-box">
+          <span>Total</span>
+          <strong id="statTotal">0</strong>
+        </div>
+        <div class="admin-stat-box">
+          <span>Confirmados</span>
+          <strong id="statConfirmed">0</strong>
+        </div>
+        <div class="admin-stat-box">
+          <span>Pendientes</span>
+          <strong id="statPending">0</strong>
+        </div>
+      </div>
+
+      <div class="admin-table-wrap">
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Código</th>
+              <th>Titular</th>
+              <th>Pases</th>
+              <th>Mensaje</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody id="adminGuestsTableBody">
+            <tr>
+              <td colspan="5">Cargando invitados...</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="./js/admin.js"></script>
+</body>
+</html>
